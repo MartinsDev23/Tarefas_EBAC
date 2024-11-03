@@ -1,0 +1,51 @@
+.hero {
+    background-image: url("/dist/images/batman-ben-affleck-dark-desktop-wallpaper-preview.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    
+
+    &__container {
+        width: 35vw;
+        position: relative;
+        top: 140px;
+        left: 50px;
+        font-weight: bold;
+
+        &__title {
+            font-size: 60px;
+            margin-bottom: 24px;
+            font-family: "Anton SC", sans-serif;
+            letter-spacing: 2px;
+        }
+
+        &__text {
+            font-family: "Roboto", sans-serif;
+        }
+
+        &__button {
+            margin-top: 24px;
+            padding: 12px;
+            text-transform: uppercase;
+            border-radius: 5px;
+            border: 1px solid #000;
+            cursor: pointer;
+            font-weight: bold;
+            font-family: "Roboto", sans-serif;
+            transition: .5s;
+
+            &:hover {
+                background-color: rgb(235, 77, 77);
+                color: #000;
+                transition: .5s;
+            }
+        }
+
+    }
+}
+
+    
+
+    

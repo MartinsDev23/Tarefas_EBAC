@@ -1,0 +1,43 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 24px 50px;
+    align-items: center;
+    margin: 0 auto;
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+
+    &__title {
+        font-family: "Lilita One", sans-serif;
+        font-size: 40px;
+    }
+
+
+    &__links {
+        display: flex;
+        justify-content: center;
+        font-family: "Roboto", sans-serif;
+
+        &__item {
+            list-style: none;
+            margin-right: 24px;
+            text-transform: uppercase;
+
+            &__button {
+                text-decoration: none;
+                padding: 10px;
+                background-color: #040714;
+                color: white;
+                border-radius: 2px;
+                border: 1px solid #fff;
+                transition: .5s;
+
+                &:hover {
+                    background-color: #fff;
+                    color: #040714;
+                    transition: .5s;
+                }
+            }
+        }
+    }
+}
