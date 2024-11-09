@@ -1,0 +1,62 @@
+.watch {
+    width: 100%;
+    text-align: center;
+
+    &__title {
+        margin-top: 50px;
+        margin-bottom: 32px;
+        font-family: 'Roboto', sans-serif;
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+    
+    &__container {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+
+        &__title {
+            color: silver;
+        }
+
+        &__list {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            gap: 32px;
+            list-style: none;
+            width: 90%;
+
+            &__item {
+                width: 300px;
+                margin-bottom: 44px;
+
+                img {
+                    display: block;
+                    height: 300px;
+                    width: 300px;
+                    border-radius: 8px;
+                }
+            }
+        }
+
+        &__button {
+            width: 100%;
+            padding: 8px;
+            margin-top: 8px;
+            background-color: #fff;
+            text-transform: uppercase;
+            border-radius: 5px;
+            border: 1px solid #000;
+            cursor: pointer;
+            font-weight: bold;
+            font-family: "Roboto", sans-serif;
+            transition: .5s;
+
+            &:hover {
+                background-color: rgb(235, 77, 77);
+                color: #000;
+                transition: .5s;
+            }
+        }
+    }
+}

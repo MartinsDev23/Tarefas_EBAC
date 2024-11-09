@@ -3,9 +3,9 @@
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
-    height: 100vh;
-    position: absolute;
-    
+    height: 650px;
+    position: static;
+    display: block;
 
     &__container {
         width: 35vw;
@@ -19,6 +19,7 @@
             margin-bottom: 24px;
             font-family: "Anton SC", sans-serif;
             letter-spacing: 2px;
+            color: rgb(158, 27, 27);
         }
 
         &__text {
@@ -35,11 +36,46 @@
             font-weight: bold;
             font-family: "Roboto", sans-serif;
             transition: .5s;
+            display: block;
 
             &:hover {
                 background-color: rgb(235, 77, 77);
                 color: #000;
                 transition: .5s;
+            }
+        }
+
+        &__description {
+            width: 150px;
+            align-items: center;
+            margin-top: 16px;
+            display: flex;
+            position: relative;
+
+            &__age {
+                width: 20px;
+                height: 20px;
+                margin-right: 16px;
+            }
+
+            &__timeMovie {
+                font-size: 14px;
+                text-transform: lowercase;
+                font-family: 'Roboto', sans-serif;
+            }
+        }
+
+        &__list {
+            list-style: none;
+            display: block;
+            margin-top: 24px;
+            font-family: 'Roboto', sans-serif;
+            border-top: 1px solid silver;
+            padding-top: 16px;
+
+            &__item {
+                margin-top: 2px;
+                
             }
         }
 

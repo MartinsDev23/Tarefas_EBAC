@@ -23,5 +23,6 @@ exports.images = comprimeImagens;
 
 exports.default = function() {
     gulp.watch('./src/*.scss', {ignoreInitial: false}, gulp.series(compilaSass));
+    gulp.watch('./src/images/*', {ignoreInitial: false}, gulp.series(comprimeImagens));
 }
 
