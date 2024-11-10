@@ -1,0 +1,1 @@
+addEventListener("DOMContentLoaded",function(){let e=document.querySelector(".fixed-button");window.addEventListener("scroll",function(){0<window.scrollY?e.classList.add("fixed-header"):e.classList.remove("fixed-header")})});
