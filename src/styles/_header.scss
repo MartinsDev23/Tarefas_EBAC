@@ -7,10 +7,23 @@
     font-family: "Roboto", sans-serif;
     font-weight: bold;
 
+    .fixed-header {
+        position: fixed;
+        top: 1;
+        width: 100%;
+        z-index: 1000;
+        right: -571px;
+    }
+    
     &__title {
         font-family: "Lilita One", sans-serif;
         font-size: 40px;
         color: rgb(235, 77, 77);
+
+        @media (max-width: 767px) {
+            font-size: 25px;
+            width: 35vw;
+        }
     }
 
 
@@ -18,6 +31,10 @@
         display: flex;
         justify-content: center;
         font-family: "Roboto", sans-serif;
+
+        @media (max-width: 767px) {
+            width: 50vw;
+        }
 
         &__item {
             list-style: none;
@@ -32,6 +49,13 @@
                 border-radius: 2px;
                 border: 1px solid #fff;
                 transition: .5s;
+
+                @media (max-width: 767px) {
+                    padding: 6px;
+                    font-size: 8px;
+                    display: flex;
+                    position: relative;
+                }
 
                 &:hover {
                     background-color: #fff;

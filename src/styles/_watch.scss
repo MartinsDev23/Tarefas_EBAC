@@ -10,6 +10,12 @@
         font-family: 'Roboto', sans-serif;
         font-weight: bold;
         color: #fff;
+
+        @media (max-width: 767px) {
+            font-size: 24px;
+            margin-bottom: 25px;
+            padding-top: 25px;
+        }
     }
     
     &__container {
@@ -27,6 +33,17 @@
             gap: 32px;
             list-style: none;
             width: 90%;
+
+            @media (min-width: 768px) and (max-width: 1023px) {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+            }
+
+            @media (max-width: 767px) {
+                display: grid;
+                grid-template-columns: 1fr;
+                width: 80%;
+            }
 
             &__item {
                 width: 300px;

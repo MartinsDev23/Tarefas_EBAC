@@ -7,6 +7,20 @@
     position: static;
     display: block;
 
+    @media (min-width: 768px) and (max-width: 1023px) {
+        height: 700px;
+    }
+
+    @media (max-width: 767px) {
+
+        background-image: url("/dist/images/batman-ben-affleck-dark-desktop-wallpaper-preview.jpg");
+        background-size: cover;
+        height: 40vh;
+        width: 100%;
+        position: static;
+        display: block;
+    }
+
     &__container {
         width: 35vw;
         position: relative;
@@ -14,16 +28,32 @@
         left: 50px;
         font-weight: bold;
 
+        @media (max-width: 767px) {
+            top: 0;
+            left: 32px;
+        }
+        
+
         &__title {
             font-size: 60px;
             margin-bottom: 24px;
             font-family: "Anton SC", sans-serif;
             letter-spacing: 2px;
             color: rgb(158, 27, 27);
+
+            @media (max-width: 767px) {
+                font-size: 38px;
+                margin-bottom: 16px;
+            }
         }
 
         &__text {
             font-family: "Roboto", sans-serif;
+
+            @media (max-width: 767px) {
+                font-size: 8px;
+                
+            }
         }
 
         &__button {
@@ -37,6 +67,12 @@
             font-family: "Roboto", sans-serif;
             transition: .5s;
             display: block;
+
+            @media (max-width: 767px) {
+                font-size: 8px;
+                padding: 8px;
+                margin-top: 12px;
+            }
 
             &:hover {
                 background-color: rgb(235, 77, 77);
@@ -52,16 +88,27 @@
             display: flex;
             position: relative;
 
+            
+
             &__age {
                 width: 20px;
                 height: 20px;
                 margin-right: 16px;
+
+                @media (max-width: 767px) {
+                    width: 16px;
+                    height: 16px;
+                }
             }
 
             &__timeMovie {
                 font-size: 14px;
                 text-transform: lowercase;
                 font-family: 'Roboto', sans-serif;
+
+                @media (max-width: 767px) {
+                    font-size: 8px;
+                }
             }
         }
 
@@ -72,6 +119,11 @@
             font-family: 'Roboto', sans-serif;
             border-top: 1px solid silver;
             padding-top: 16px;
+
+            @media (max-width: 767px) {
+                font-size: 8px;
+                display: none;
+            }
 
             &__item {
                 margin-top: 2px;
