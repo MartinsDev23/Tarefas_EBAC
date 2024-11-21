@@ -1,5 +1,4 @@
 import { Token } from "./config.js";
-console.log(Token);
 
 document.addEventListener('DOMContentLoaded', function(){
     
