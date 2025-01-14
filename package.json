@@ -1,20 +1,16 @@
 {
   "name": "tarefas_ebac",
   "version": "1.0.0",
-  "description": "Tarefas do curso da Ebac, separado em branches",
   "main": "index.js",
   "scripts": {
-    "gulp": "gulp",
+    "cypress": "cypress",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "keywords": [],
   "author": "",
   "license": "ISC",
+  "description": "",
   "devDependencies": {
-    "gulp": "^4.0.2",
-    "gulp-imagemin": "^7.1.0",
-    "gulp-sass": "^5.1.0",
-    "gulp-uglify": "^3.0.2",
-    "gulp-watch": "^5.0.1",
-    "sass": "^1.80.6"
+    "cypress": "^12.6.0"
   }
 }
